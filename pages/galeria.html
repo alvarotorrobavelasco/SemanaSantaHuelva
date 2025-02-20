@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Semana Santa de Huelva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../media/images/logo.jpg" alt="Logo Semana Santa" width="30" height="30" class="d-inline-block align-text-top">
+                Semana Santa de Huelva
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hermandades.html">Hermandades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-4">
+        <h1 class="text-center mb-4">Galería Fotográfica</h1>
+
+        <!-- Filtros -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <button class="btn btn-outline-dark m-2 filter-btn active" data-filter="all">Todos</button>
+                    <button class="btn btn-outline-dark m-2 filter-btn" data-filter="cristos">Cristos</button>
+                    <button class="btn btn-outline-dark m-2 filter-btn" data-filter="virgenes">Vírgenes</button>
+                    <button class="btn btn-outline-dark m-2 filter-btn" data-filter="momentos">Momentos Especiales</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galería de imágenes -->
+        <div class="row gallery-container">
+            <!-- Cristo de la Cena -->
+            <div class="col-md-4 col-sm-6 gallery-item cristos" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/cena.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/cena.jpeg" class="img-fluid" alt="Cristo de la Cena">
+                    <div class="gallery-overlay">
+                        <h5>Cristo de la Cena</h5>
+                        <p>Domingo de Ramos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cristo de la Expiración -->
+            <div class="col-md-4 col-sm-6 gallery-item cristos" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/expiracion.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/expiracion.jpeg" class="img-fluid" alt="Cristo de la Expiración">
+                    <div class="gallery-overlay">
+                        <h5>Cristo de la Expiración</h5>
+                        <p>Miercoles Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cristo del Perdón -->
+            <div class="col-md-4 col-sm-6 gallery-item cristos" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/perdon.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/perdon.jpg" class="img-fluid" alt="Cristo del Perdón">
+                    <div class="gallery-overlay">
+                        <h5>Cristo del Perdón</h5>
+                        <p>Lunes Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cristo de la Sentencia -->
+            <div class="col-md-4 col-sm-6 gallery-item cristos" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/sentencia.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/sentencia.jpeg" class="img-fluid" alt="Cristo de la Sentencia">
+                    <div class="gallery-overlay">
+                        <h5>Cristo de la Sentencia</h5>
+                        <p>Miércoles Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virgen de la Victoria -->
+            <div class="col-md-4 col-sm-6 gallery-item virgenes" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/victoria.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/victoria.jpg" class="img-fluid" alt="Virgen de la Victoria">
+                    <div class="gallery-overlay">
+                        <h5>Virgen de la Victoria</h5>
+                        <p>Miercoles Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virgen de la Esperanza -->
+            <div class="col-md-4 col-sm-6 gallery-item virgenes" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/esperanza.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/esperanza.jpg" class="img-fluid" alt="Virgen de la Esperanza">
+                    <div class="gallery-overlay">
+                        <h5>Virgen de la Esperanza</h5>
+                        <p>Miercoles Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virgen de los Dolores (Judíos) -->
+            <div class="col-md-4 col-sm-6 gallery-item virgenes" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/dolores-judios.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/dolores_judios.jpeg" class="img-fluid" alt="Virgen de los Dolores de Judíos">
+                    <div class="gallery-overlay">
+                        <h5>Virgen de los Dolores de Judíos</h5>
+                        <p>Jueves Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virgen de los Dolores (Perdón) -->
+            <div class="col-md-4 col-sm-6 gallery-item virgenes" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/dolores-perdon.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/Dolores_Perdon.jpg" class="img-fluid" alt="Virgen de los Dolores del Perdón">
+                    <div class="gallery-overlay">
+                        <h5>Virgen de los Dolores del Perdón</h5>
+                        <p>Lunes Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Virgen de los Dolores (Lanzada) -->
+            <div class="col-md-4 col-sm-6 gallery-item virgenes" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/dolores-lanzada.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/dolores_lanzada.jpeg" class="img-fluid" alt="Virgen de los Dolores de la Lanzada">
+                    <div class="gallery-overlay">
+                        <h5>Virgen de los Dolores de la Lanzada</h5>
+                        <p>Martes Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Momento especial -->
+            <div class="col-md-4 col-sm-6 gallery-item momentos" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/salida-nazareno.jpg">
+                <div class="gallery-card">
+                    <img src="../media/images/salidanazareno.jpg" class="img-fluid" alt="Salida del Nazareno">
+                    <div class="gallery-overlay">
+                        <h5>Salida del Nazareno</h5>
+                        <p>Viernes Santo - Madrugá</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 gallery-item momentos" data-bs-toggle="modal" data-bs-target="#imageModal" data-image="../media/images/barriovictoria.jpg">
+                <div class="gallery-card">
+                    
+                    <img src="../media/images/barriovictoria.jpg" class="img-fluid" alt=">Virgen de la victoria en su barrio">
+                    <div class="gallery-overlay">
+                        <h5>La Victoria en su barrio</h5>
+                        <p>Miercoles Santo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Añadir más imágenes siguiendo el mismo patrón -->
+        </div>
+
+        <!-- Modal para ver imágenes -->
+        <div class="modal fade" id="imageModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <button type="button" class="btn-close position-absolute top-0 end-0 m-2" data-bs-dismiss="modal"></button>
+                        <img src="" class="img-fluid" alt="Imagen ampliada">
+                        <div class="modal-caption p-3">
+                            <h5 class="modal-title"></h5>
+                            <p class="modal-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Semana Santa de Huelva</h5>
+                    <p>Patrimonio cultural y religioso de nuestra ciudad</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Síguenos en redes sociales</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para el filtrado de imágenes
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Añadir clase active al botón clickeado
+                    this.classList.add('active');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Script para el modal
+            const modal = document.getElementById('imageModal');
+            modal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                const imageSrc = button.getAttribute('data-image');
+                const title = button.querySelector('h5').textContent;
+                const description = button.querySelector('p').textContent;
+
+                const modalImage = this.querySelector('.modal-body img');
+                const modalTitle = this.querySelector('.modal-title');
+                const modalDescription = this.querySelector('.modal-description');
+
+                modalImage.src = imageSrc;
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+            });
+        });
+    </script>
+</body>
+</html>
+
+
